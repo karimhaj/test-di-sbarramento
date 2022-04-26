@@ -1,0 +1,96 @@
+@import 'reset.css';
+
+
+:root {
+    --body-bg: #F5F5FB;
+    --side-bg: #FFFFFF;  
+    --box-bg: #C4C4C4;
+  }
+
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+nav{
+    height: 100vh;
+    width: 20%;
+    background-color: var(--side-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+main{
+    height: 100vh;
+    width: 50%;
+    background-color: var(--body-bg);
+}
+
+aside{
+    height: 100vh;
+    width: 30%;
+    background-color: var(--side-bg);
+}
+
+nav > .top{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.top > .top-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+
+.top-head > .avatar{
+    background-color: var(--box-bg);
+    height: 50px;
+    width: 20%;
+}
+
+.top-head > .name{
+    background-color: var(--box-bg);
+    height: 50px;
+    width: 60%;
+}
+/*
+.box{
+    width: 50px;
+    height: 50px;
+}*/
+
+.top-links{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.top-links > .box-rectangle{
+    width: 100%;
+    height: 35px;
+    background-color: var(--box-bg);
+    margin: 5% 0;
+}
+.top-links{
+    padding-top: 50px;
+}
+
+.bottom{
+padding: 5%;
+}
+
+.bottom > .box-bottom{
+    width: 100%;
+    height: 200px;
+    background-color: var(--box-bg);  
+    border-radius: 5%; 
+}
+
